@@ -22,7 +22,7 @@ export default function Cards({ cards }: PropsType) {
         <span className="text-center">
           <button
             onClick={() => setCardsRevealed(true)}
-            className="shadow-lg py-3 px-4 bg-test text-grey rounded-xl hover:text-indigo-500 hover:opacity-75 transition-all"
+            className="shadow-lg py-3 px-4 bg-grey-200 text-grey-100 rounded-xl hover:text-indigo-500 hover:opacity-75 transition-all"
           >{`Reveal${cards.length > 1 ? ' my cards' : ''}`}</button>
         </span>
         <div className="flex justify-center gap-6 flex-wrap">

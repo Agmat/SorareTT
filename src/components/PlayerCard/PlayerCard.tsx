@@ -3,6 +3,7 @@ import { Player } from '@/typesPlayer';
 import { Rarity } from '@/typesRarity';
 import { Card } from '@/typesCard';
 import { useEffect, useState } from 'react';
+import { palette } from '@/styles/palette';
 
 type PropsType = Card & { revealed?: boolean };
 
@@ -13,31 +14,31 @@ export function PlayerCard({ player, rarity, season, revealed = false }: PropsTy
       bgColor: 'border-unique',
       text: 'text-unique',
       bgImg: 'bg-unique-card-svg',
-      shadow: '#F0783D',
+      shadow: palette.unique,
     },
     super_rare: {
       bgColor: 'border-super_rare',
       text: 'text-super_rare',
       bgImg: 'bg-super_rare-card-svg',
-      shadow: '#7C38BB',
+      shadow: palette.super_rare,
     },
     rare: {
       bgColor: 'border-rare',
       text: 'text-rare',
       bgImg: 'bg-rare-card-svg',
-      shadow: '#2986CC',
+      shadow: palette.rare,
     },
     limited: {
       bgColor: 'border-limited',
       text: 'text-limited',
       bgImg: 'bg-limited-card-svg',
-      shadow: '#127254',
+      shadow: palette.limited,
     },
     common: {
       bgColor: 'border-common',
       text: 'text-common',
       bgImg: 'bg-common-card-svg',
-      shadow: '#999999',
+      shadow: palette.common,
     },
   };
 

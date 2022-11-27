@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin');
+const { palette } = require('./src/styles/palette');
 
 const MyAnimations = plugin(function ({ addUtilities }) {
   addUtilities({
@@ -23,8 +24,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        test: '#2B2A30',
-        grey: '#D6D6D6',
+        grey: {
+          100: '#D6D6D6',
+          200: '#2B2A30',
+        },
 
         // Card rarity
         unique: '#F0783D',
