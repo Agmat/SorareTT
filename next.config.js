@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['assets.sorare.com'],
+    domains: ['assets.sorare.com', 'sorare.com'],
   },
   rewrites: () => {
     return [
