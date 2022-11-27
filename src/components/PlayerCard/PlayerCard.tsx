@@ -56,8 +56,8 @@ export function PlayerCard({ player, rarity, season, revealed = false }: PropsTy
     >
       <div
         className={`${
-          isRevealed ? 'rotate-y-180' : ''
-        } rounded-3xl perspective relative preserve-3d cursor-pointer w-full h-full transition-transform duration-700`}
+          isRevealed ? 'rotate-y-180' : 'cursor-pointer'
+        } rounded-3xl perspective relative preserve-3d w-full h-full transition-transform duration-700`}
       >
         <div className="absolute inset-0 backface-hidden">
           <Image

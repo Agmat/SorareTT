@@ -2,33 +2,42 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
-
+Install deps and start the development server:
 ```bash
-npm run dev
-# or
-yarn dev
+pnpm install
+pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:8080](http://localhost:8080) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Some slugs idea to test the app:
+* `lionel-andres-messi-cuccittini-2022-limited-44`
+* `marco-verratti-2021-unique-1,lionel-andres-messi-cuccittini-2022-limited-44,hugo-lloris-2022-common-1437d069-595c-4378-a423-4b4af2aee2bb,aurelien-tchouameni-2022-rare-18,lyle-foster-2022-limited-113,ayase-ueda-2022-rare-48,lukas-nmecha-2022-limited-111,lynnt-audoor-2022-limited-70`
+* `marco-verratti-2021-unique-1,lionel-andres-messi-cuccittini-2022-limited-44,hugo-lloris-2022-common-1437d069-595c-4378-a423-4b4af2aee2bb`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+In addition to the requested features I took the remaining time I had to add a few of my own:
+* You can reveal cards individually by clicking on them.
+* You can preview the rarity of a card before the reveal by hovering it. 
+### Part 4 answer
 
-To learn more about Next.js, take a look at the following resources:
+To generate a PNG I'll implement a button that'll use the library [html2canvas](https://html2canvas.hertzen.com/).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Then I think it would be a good idea to design a detailed view of a card so you can choose the one you want to export as PNG.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Inspiration
 
-## Deploy on Vercel
+For the design of the cards I tried replicating the basketball one you're using.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I used `Low Poly Grid` from https://app.haikei.app/ to generate the svgs used on the background of the cards.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For the color schemes I inspired myself from rpg games items rarity.
+
+## Ideas for next steps
+
+If I had more time this is the things I would have liked to do:
+* Use something else than the `tailwind-ui` default font family.
+* Design a close view of a card and try to implement some animation from [this website](https://deck-24abcd.netlify.app/?fbclid=IwAR3Bv8yj0ZtsxVUqxiENnI28SDU1mJ4hoL9rH5mDlUm-7V_MiEvplJAVWtw).
+* Pack opening simulator with random cards rarity.
