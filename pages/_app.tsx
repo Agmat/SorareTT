@@ -1,7 +1,7 @@
 import '../src/styles/globals.css';
 import type { AppProps } from 'next/app';
 import { ApolloClient, ApolloProvider, HttpLink, InMemoryCache } from '@apollo/client';
-import client from '../src/app/apollo-client';
+import client from '@/graphql/apollo-client';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

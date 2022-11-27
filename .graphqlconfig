@@ -1,6 +1,6 @@
 {
   "schema": "https://api.sorare.com/graphql",
-  "schemaPath": "./app/schema.graphql",
+  "schemaPath": "./graphql/schema.graphql",
   "extensions": {
     "endpoints": {
       "Default GraphQL Endpoint": {

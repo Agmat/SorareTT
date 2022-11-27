@@ -1,3 +1,3 @@
-import { PlayerCard } from './Card';
+import { PlayerCard } from './PlayerCard';
 
 export default PlayerCard;
